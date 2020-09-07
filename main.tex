@@ -40,17 +40,18 @@
 
 \section{Introducción}\label{contenido}
 
-un computador es una máquina que funciona mediante hardware y software, 
+
+Un computador es una máquina que funciona mediante hardware y software, 
 el hardware se encuentra constituido por varios componentes
 como lo son la pantalla, mouse, teclado y CPU, esta última contiene varios 
 elementos fundamentales para el funcionamiento de la máquina, 
-entre ellos podemos encontrar la memoria RAM, memoria ROM, memoria  caché, 
+entre ellos podemos encontrar la memoria RAM, memoria ROM, memoria caché, 
 memoria Flash, memoria Virtual, entre otras. 
 
 \section{Memoria del computador}\label{contenido}
 
 la memoria del computador es un circuito electrónico conformado por una gran cantidad de 
-capacitores y transistores contenidos en un micro chip, en el cual se almacena información en forma de energía que viaja a través de buses (pistas de cobre de la tarjeta electrónica) hacia el microcontrolador o procesador para ser interpretada usando el sistema binario, el 1 representado presencia de voltaje en los capacitores, y 0  ausencia de éste en los mismos.
+capacitores y transistores contenidos en un micro chip, en el cual se almacena información en forma de energía que viaja a través de buses (pistas de cobre de la tarjeta electrónica) hacia el microcontrolador o procesador para ser interpretada usando el sistema binario, la 1 representado presencia de voltaje en los capacitores, y 0 ausencia de éste en los mismos.
 
 
 \section{Tipos de memoria} \label{contenido}
@@ -60,57 +61,61 @@ Un ordenador cuenta con varios tipos de memoria que varían en su capacidad de a
 y su velocidad. 
 
 
-\section{Disco duro: }
-Es la memoria no volátil con mayor capacidad de almacenamiento de información en un computador, pero tiene una desventaja, al poder almacenar tanta información el proceso de búsqueda es mas extenso, siendo aun mas lento si se trata de un disco magnético el cual debe realizar el proceso mediante movimientos mecánicos, si se trata de un disco duro de estado solido el tiempo de respuesta es menor, pero sigue siendo lento para la velocidad de los procesadores actuales. 
+\subsection{Disco duro }
+Es la memoria no volátil con mayor capacidad de almacenamiento de información en un computador, pero tiene una desventaja, al poder almacenar tanta información el proceso de búsqueda es más extenso, siendo aún más lento si se trata de un disco magnético el cual debe realizar el proceso mediante movimientos mecánicos, si se trata de un disco duro de estado solido el tiempo de respuesta es menor, pero sigue siendo lento para la velocidad de los procesadores actuales. 
 
-\section{Memoria virtual: }
+\subsection{Memoria virtual }
 
-Es un segmento de memoria tomado del disco duro donde se almacena la información que no se esta usando de manera inmediata en los programas que se ejecutan en el momento en la RAM y ocuparían espacio innecesario. 
+Es un segmento de memoria tomado del disco duro donde se almacena la información que no se está usando de manera inmediata en los programas que se ejecutan en el momento en la RAM y ocuparían espacio innecesario. 
 
-\section{Memoria RAM: }
+\subsection{Memoria RAM }
 
 Es una memoria mucho más rápida que el disco duro, pero con menor capacidad de almacenamiento que este, y al contrario del disco duro esta es una memoria volátil, lo que conlleva a que cada vez que el computador se apague esta deba mandar la información que se desee guardar al disco duro, si esta no se manda se pierde toda la información almacenada.   
 
-\section{Memoria cache: }
+\subsection{Memoria cache }
 
-Esta memoria esta dividida en tres partes llamadas L1, L2 y L3, nombradas de menor a mayor capacidad de almacenamiento y de mayor a menor velocidad, el sistema almacena en estas la información que mas usa el usuario lo que acelera la velocidad del computador, L1 y L2 se encuentran ubicadas en el procesador lo que hace que el recorrido de la información sea menor  y en consecuencia sean mas veloces, por el contrario L3 se encuentra fuera del micro procesador lo que genera que la información deba recorrer más distancia. 
+Esta memoria está dividida en tres partes llamadas L1, L2 y L3, nombradas de menor a mayor capacidad de almacenamiento y de mayor a menor velocidad, el sistema almacena en estas la información que más usa el usuario lo que acelera la velocidad del computador, L1 y L2 se encuentran ubicadas en el procesador lo que hace que el recorrido de la información sea menor  y en consecuencia sean más veloces, por el contrario L3 se encuentra fuera del micro procesador lo que genera que la información deba recorrer más distancia. 
+
+\subsection{Memoria fija ROM  }
+<<solo puede ser leida por el microprocesador. sin embargo, no pierde su información al apagar el ordenador.>> \cite{transisores}
+
 
 \section{Gestión de memoria del computador}
 
 
+-- Se genera orden para modificar información.
 
-Se genera orden para modificar información.
+-- Orden se guarda temporalmente en memoria.
 
-Orden se guarda temporalmente en memoria.
+-- Procesador detecta orden y la busca en la memoria 
 
-Procesador detecta orden y la busca en la memoria 
+-- El procesador ejecuta dicha orden ejem abrir programa. 
 
-El procesador ejecuta dicha orden ejem abrir programa. 
+-- Al cumplirse la orden esta se elimina de la memoria temporal.
 
-Al cumplirse la orden esta se elimina de la memoria temporal.
+-- Procesador envía orden al controlador y este la almacena en la RAM
 
-Procesador envía orden al controlador y este la almacena en la RAM
+-- Se busca información en el disco duro y se pasa a la memoria.
 
-Se busca información en el disco duro y se pasa a la memoria.
+-- El procesador realiza las acciones necesarias en la información. 
 
-El procesador realiza las acciones necesarias en la información. 
+-- Se repite el ciclo de mover la información y modificarla. 
 
-Se repite el ciclo de mover la información y modificarla. 
+-- Si se ordena guardar la información esta pasa al disco duro, si no se gurda y el computador se apaga pierde la información de la memoria.\cite{computadores}
 
-Si se ordena guardar la información esta pasa al disco duro, si no se gurda y el computador se apaga pierde la información de la memoria. 
 
 \section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
 
 Los factores que pueden influir en la velocidad de las memorias es el, guardar la información con sistemas mecánicos, a mayor capacidad de almacenamiento menor velocidad ya que la memoria debe contener más circuitos compuestos con capacitores, transistores y otras componentes que hacen que la tarjeta aumente de tamaño y agrandando   la distancia entre las conexiones, lo que genera que la información se tarde más tiempo en llegar a su destino, la necesidad de refrescar constante mente la información cargando los capacitores, esto es importante porque hasta este momento no se cuenta con una memoria que tenga una gran capacidad de almacenamiento y a la par sea de gran velocidad lo que obligo a la ciencia a crear nuevas memorias que cubran esta falencia. 
 
 
-\section{Conclusión} \label{conclulsion}
+\section{Conclusión} \label{Conclusión}
 
 En la actualidad no se cuenta con una memoria que tenga una gran capacidad de almacenamiento tenga una gran velocidad y sea producida a bajo costo, por esto se han generado varios tipos de memorias que cubren esta falencia haciendo, dándonos la posibilidad de tener computadoras que funcionan cada vez mejor a precios accesibles para las personas del común. 
 
 \bibliographystyle{IEEEtran}
-\bibliography{references}
+\bibliography{references.bib}
+
+
 
 \end{document}
-
-
